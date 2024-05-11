@@ -30,7 +30,8 @@ jobs:
       - name: Check node and npm version
         run: node -v & npm -v
       - name: Update npm to latest
-        run: npm i --prefer-online --no-fund --no-audit -g npm@latest
+        # run: npm i --prefer-online --no-fund --no-audit -g npm@latest
+        run: npm install --prefer-online --no-fund --no-audit -g npm@latest
       - run: npm -v
       - run: npm i --ignore-scripts --no-audit --no-fund
       - run: npm run lint
