@@ -26,7 +26,8 @@ jobs:
           git config --global user.name "npm CLI robot"
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          # node-version: 16.x
+          node-version: 20.5.0
       - name: Check node and npm version
         run: node -v & npm -v
       # - name: Update npm to latest
@@ -45,8 +46,9 @@ jobs:
           # - 12.x
           # - 14.15.0
           # - 14.x
-          - 16.0.0
-          - 16.x
+          # - 16.0.0
+          # - 16.x
+          - 20.5.0
         platform:
           - os: ubuntu-latest
             shell: bash
