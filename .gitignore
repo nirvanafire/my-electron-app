@@ -1,7 +1,7 @@
 # This file is automatically added by @npmcli/template-oss. Do not edit.
 
 # ignore everything in the root
-/*
+# /*
 
 # keep these
 !/.eslintrc.local.*
